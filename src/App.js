@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 import Button from './components/button/button';
-
-import { Navbar,Nav, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown, Carousel} from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">Jest Unit Testing</Navbar.Brand>
+      <Navbar bg="light" expand="lg">
+          <Navbar.Brand href="#home">Jest-Enzyme</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -23,7 +22,43 @@ function App() {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-        </Navbar>
+      </Navbar>
+
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://source.unsplash.com/7jQh3EiS8Bs"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://source.unsplash.com/7jQh3EiS8Bs"
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://source.unsplash.com/7jQh3EiS8Bs"
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
 
       <header className="App-header">
         <Button label="BUY NOW"></Button>
