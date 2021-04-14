@@ -10,7 +10,6 @@ function App() {
       <Header />
       {/*  <Navbar2 />*/}
       <Slider  />
-
     </div>
   );
 }
